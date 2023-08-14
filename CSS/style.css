@@ -1,0 +1,73 @@
+header .header-top{
+    background-color: rgb(46, 0, 0);
+}
+header{
+    position: relative;
+}
+.menu{
+    background-color: #4c4c4c;
+    position: absolute;
+    top: 20;
+}
+
+/* homepage */
+.home{
+    background-image: url(../IMAGES/homebackground.jpg.webp);
+    height: 100vh;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.btn{
+    margin-top: 20px;
+}
+.home .btn, .home p{
+    margin-left: 30%;
+}
+.home-text{
+    margin-left: 10px;
+}
+.home-text p, .home-text .btn{
+    margin-left: 0;
+}
+.home-text h1{
+    font-size: 40px;
+    font-family: "Baskervville",serif;
+}
+
+
+/* footer  */
+footer{
+    background: #2D0000;
+}
+footer .footer-top{
+    box-shadow: 0px 20px 30px rgba(0,0,0,0.06);
+    padding: 20px 36px 10px 50px;
+    background: #EFE2E2;
+    z-index: 1;
+}
+.footer-bottom .footer-bottom-1 nav ul{
+    list-style: none;
+}
+.footer-bottom .footer-bottom-1 nav li a{
+    color: white;
+    text-decoration: none;
+}
+.footer-bottom .footer-bottom-1 nav li a:hover{
+    color: #FF6F00;
+}
+footer .footer-bottom-2 .line{
+    border-top: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 18px 0;
+}
+.footer-bottom-3 svg{
+    color: #FF6F00;
+}
+.footer-bottom-3{
+    color: #AC9191;
+}
+.footer-bottom-3 a{
+    color: tomato;
+    text-decoration: none;
+}
