@@ -21,6 +21,9 @@ header{
 .btn{
     margin-top: 20px;
 }
+.home .btn{
+    width: 250px;
+}
 .home .btn, .home p{
     margin-left: 30%;
 }
@@ -70,4 +73,10 @@ footer .footer-bottom-2 .line{
 .footer-bottom-3 a{
     color: tomato;
     text-decoration: none;
+}
+
+@media screen (min-width: 375px) {
+    .home .btn{
+        width: 100px;
+    }
 }
