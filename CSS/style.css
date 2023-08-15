@@ -1,14 +1,7 @@
 header .header-top{
     background-color: rgb(46, 0, 0);
 }
-header{
-    position: relative;
-}
-.menu{
-    background-color: #4c4c4c;
-    position: absolute;
-    top: 20;
-}
+
 
 /* homepage */
 .home{
@@ -17,6 +10,18 @@ header{
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+}
+.home .menu{
+    background-color: #4c4c4c;
+    margin-top: -10px;
+    width: 85%;
+    position: absolute;
+    bottom: 18;
+    box-sizing: border-box;
+}
+.menu .menu-content{
+    width: 120px;
 }
 .btn{
     margin-top: 20px;
@@ -33,22 +38,31 @@ header{
 .home-text p, .home-text .btn{
     margin-left: 0;
 }
+.home-text .btn{
+    width: 170px;
+    font-size: 15px;
+}
 .home-text h1{
     font-size: 40px;
     font-family: "Baskervville",serif;
 }
 
 
+
+
 /* footer  */
 footer{
     background: #2D0000;
 }
-footer .footer-top{
+/* footer .footer-top{
     box-shadow: 0px 20px 30px rgba(0,0,0,0.06);
     padding: 20px 36px 10px 50px;
     background: #EFE2E2;
     z-index: 1;
-}
+    bottom: 80%;
+    max-width: 300px;
+    margin: auto;
+} */
 .footer-bottom .footer-bottom-1 nav ul{
     list-style: none;
 }
@@ -64,6 +78,12 @@ footer .footer-bottom-2 .line{
     border-bottom: 1px solid rgba(255,255,255,0.2);
     padding: 18px 0;
 }
+.footer-bottom-2 .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 .footer-bottom-3 svg{
     color: #FF6F00;
 }
@@ -75,8 +95,66 @@ footer .footer-bottom-2 .line{
     text-decoration: none;
 }
 
-@media screen (min-width: 375px) {
-    .home .btn{
-        width: 100px;
+@media only screen and (min-width : 320px) {
+    .home-text h1{
+        font-size: 28px;
+    }
+    .home-text p{
+        font-size: 15px;
+    }
+    
+}
+
+
+@media only screen and (min-width: 425px) {
+    .footer-bottom-2 .content{
+        flex-direction: row;
+    }
+    .content .btn{
+        width: 50%;
+    }
+}
+@media only screen and (min-width : 768px){
+    /* header  */
+    .header-top{
+        background-color: #2D0000;
+    }
+    .row .btn{
+        margin-top: 0;
+    }
+
+
+    /* home page  */
+    .home .menu{
+        width: 90%;
+        top: 20px;
+    }
+    .home-text p, .home-text .btn{
+        /* margin-left: 0; */
+        margin-top: 40px;
+    }
+    .home-text h1{
+        font-size: 60px;
+        margin-top: 60px;
+    }
+    .home-text p{
+        font-size: 25px;
+    }
+    .home-text .btn{
+        font-size: 20px;
+        width: 250px;
+    }
+    .content .btn{
+        width: 25%;
+    }
+}
+
+@media only screen and (min-width : 1024px){
+    .header-content .col-12>p{
+        display: none;
+    }
+    .home-text h1{
+        /* font-size: 60px; */
+        margin-top: 50%;
     }
 }
