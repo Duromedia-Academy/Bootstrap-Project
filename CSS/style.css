@@ -6,7 +6,7 @@ header .header-top{
 /* homepage */
 .home{
     background-image: url(../IMAGES/homebackground.jpg.webp);
-    height: 100vh;
+    max-height: 100vh;
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center;
@@ -41,6 +41,9 @@ header .header-top{
 .home-text .btn{
     width: 170px;
     font-size: 15px;
+}
+.home-text .btn:hover{
+    background-color: #FF6F00 in !important;
 }
 .home-text h1{
     font-size: 40px;
@@ -82,7 +85,8 @@ footer .footer-bottom-2 .line{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
+    width: 65%;
 }
 .footer-bottom-3 svg{
     color: #FF6F00;
@@ -109,9 +113,11 @@ footer .footer-bottom-2 .line{
 @media only screen and (min-width: 425px) {
     .footer-bottom-2 .content{
         flex-direction: row;
+        width: 100%;
     }
     .content .btn{
         width: 50%;
+        /* padding-top: 0; */
     }
 }
 @media only screen and (min-width : 768px){
@@ -121,6 +127,9 @@ footer .footer-bottom-2 .line{
     }
     .row .btn{
         margin-top: 0;
+    }
+    .home .menu{
+        top: 0px !important;
     }
 
 
@@ -135,7 +144,7 @@ footer .footer-bottom-2 .line{
     }
     .home-text h1{
         font-size: 60px;
-        margin-top: 60px;
+        margin-top: 20%;
     }
     .home-text p{
         font-size: 25px;
@@ -149,12 +158,35 @@ footer .footer-bottom-2 .line{
     }
 }
 
-@media only screen and (min-width : 1024px){
-    .header-content .col-12>p{
-        display: none;
+@media only screen and (min-width : 1024px) {
+    .header-content .top .add{
+        display: none !important;
+    }
+    .header-content .top .bar{
+        display: flex !important;
+    }
+    .header-content .top .bar ul{
+        list-style: none;
+    }
+    .header-content .top .bar ul li a{
+        color: black;
+        text-decoration: none;
     }
     .home-text h1{
-        /* font-size: 60px; */
-        margin-top: 50%;
+        font-size: 70px;
+        margin-top: 20%;
+    }
+    .home-text p{
+        font-size: 30px;
+    }
+    .footer-bottom .footer-bottom-2 .content .call{
+        display: block !important;
+    }
+}
+
+
+@media only screen and (min-width: 1440px) {
+    .header-content .top .add{
+        display: inline !important;
     }
 }
