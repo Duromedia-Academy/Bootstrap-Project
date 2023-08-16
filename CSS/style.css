@@ -6,11 +6,11 @@ header .header-top{
 }
 .header-content .row .menu{
     background-color: #4c4c4c;
-    width: 85%;
+    width: 90%;
     box-sizing: border-box;
     position: absolute;
     top: 80%;
-    margin: auto;
+    /* margin: auto; */
 }
 .menu .menu-content{
     width: 120px;
