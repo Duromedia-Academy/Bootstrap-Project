@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Blog</title>
+</head>
+<body>
+    <header class="container-fluid p-3 p-md-0">
+        <div class="header-top d-none d-md-flex justify-content-md-between align-items-md-center px-md-4">
+            <div class="text-white">Location: 76/A, Kings road, NY <span class="text-secondary mx-2"> | </span> Mail Us: lawyer76@gmail.com</div>
+            <div class="svg d-flex text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook m-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                 </svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter-filled m-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M14.058 3.41c-1.807 .767 -2.995 2.453 -3.056 4.38l-.002 .182l-.243 -.023c-2.392 -.269 -4.498 -1.512 -5.944 -3.531a1 1 0 0 0 -1.685 .092l-.097 .186l-.049 .099c-.719 1.485 -1.19 3.29 -1.017 5.203l.03 .273c.283 2.263 1.5 4.215 3.779 5.679l.173 .107l-.081 .043c-1.315 .663 -2.518 .952 -3.827 .9c-1.056 -.04 -1.446 1.372 -.518 1.878c3.598 1.961 7.461 2.566 10.792 1.6c4.06 -1.18 7.152 -4.223 8.335 -8.433l.127 -.495c.238 -.993 .372 -2.006 .401 -3.024l.003 -.332l.393 -.779l.44 -.862l.214 -.434l.118 -.247c.265 -.565 .456 -1.033 .574 -1.43l.014 -.056l.008 -.018c.22 -.593 -.166 -1.358 -.941 -1.358l-.122 .007a.997 .997 0 0 0 -.231 .057l-.086 .038a7.46 7.46 0 0 1 -.88 .36l-.356 .115l-.271 .08l-.772 .214c-1.336 -1.118 -3.144 -1.254 -5.012 -.554l-.211 .084z" stroke-width="0" fill="currentColor"></path>
+                 </svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin m-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                    <path d="M8 11l0 5"></path>
+                    <path d="M8 8l0 .01"></path>
+                    <path d="M12 16l0 -5"></path>
+                    <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                 </svg>
+                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube-filled m-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" stroke-width="0" fill="currentColor"></path>
+                 </svg>
+            </div>
+        </div>
+        <div class="header-content position-fixed container-fluid z-1 bg-white top-0">
+            <div class="row px-3">
+                <div class="top col-12 d-md-flex p-md-3 justify-content-md-between align-items-md-center">
+
+                    <img src="./IMAGES/logo.png.webp" alt="LOGO">
+                    <nav class=" bar d-none">
+                        <ul class="d-flex flex-wrap justify-content-center align-items-center">
+                            <li class="m-3 fs-5"><a href="./index.html">Home</a></li>
+                            <li class="m-3 fs-5"><a href="./Practice Area.html">Practice Area</a></li>
+                            <li class="m-3 fs-5"><a href="./About.html">About</a></li>
+                            <li class="m-3 fs-5"><a href="./blog.html">Blog</a></li>
+                            <li class="m-3 fs-5"><a href="./Contact.html">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <div class="btn btn-outline-danger p-1 fs-5 rounded-0 d-none btn-sm btn-outline-danger d-md-block">
+                        Make An Appointment
+                    </div>
+                    <p class=" add text-dark fs-6 d-none d-md-block">Call Us: <span class="fw-bold text-danger">+1 (78)673 3567</span></p>
+                </div>
+                <div class="menu container-fluid d-flex justify-content-end align-items-end p-2 mx-4 overflow-hidden d-lg-none">
+                    <div class="menu-content bg-black text-white rounded">
+                        <p>MENU
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M4 6l16 0"></path>
+                                <path d="M4 12l16 0"></path>
+                                <path d="M4 18l16 0"></path>
+                             </svg>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+
+    <!-- home page 
+    <section class="home">
+        <div class="btn btn-outline-light p-1 fs-4 rounded-0 btn-sm btn-outline-danger d-md-none">
+            Make An Appointment
+        </div>
+        <p class="text-white py-1 fs-6 d-md-none">Call Us: <span class="fw-bold">+1 (78)673 3567</span></p>
+        <div class="home-text text-white d-flex flex-column p-3 w-75">
+            <h1>Special Approach Dedicated Attorney</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro repellat aliquid nihil suscipit</p>
+            <div class="btn rounded-0 bg-danger text-white py-3 px-4">Our Practice Area</div>
+        </div>
+    </section> -->
+   
+   
+   <!-- ------ start-work------------ -->
+   
+    <section id="header">
+        <div class="container">
+            <div class="row">
+            <div class="col-xl-5 col-lg-6 col-md-8">
+            <div class="hero-caption hero-caption2">
+                <div class="text-light">
+                <h2>Blog</h2>
+                 <p>Mollit anim laborum duis adseu dolor iuyn voluptcate velit ess  <br>cillum dolore egru lofrre dsu.</p>
+ 
+                </div>
+            
+            </div>
+            </div>
+            </div>
+            </div>
+    </section>
+    
+
+    <!-- ------section-2-------------- -->
+    <section class="blog_area section-padding">
+        <div class="container">
+        <div class="row">
+        <div class="col-lg-8 mb-5 mb-lg-0">
+        <div class="blog_left_sidebar">
+        <article class="blog_item">
+        <div class="blog_item_img">
+        <img class="card-img rounded-0" src="../main/IMAGES/image-1.webp"   alt="">
+
+       <div class="container-2">
+        <div class="">
+            <a href="#" class="blog_item_date">
+                <h3>15</h3>
+                <p>Jan</p>
+                </a>
+        </div>
+       </div>
+        </div>
+        <div class="blog_details">
+            <div class="google">
+                <a class="d-inline-block" href="blog_details.html">
+                    <h2 class="blog-head fs-4" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                    </a>
+               </div>
+        <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+        he earth it first without heaven in place seed it second morning saying.</p>
+   
+        </div>
+        <div class="svg">
+            <ul class="blog-info-link">
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                 </svg> Travel, Lifestyle</a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-circle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1"></path>
+                 </svg> 03 Comments</a></li>
+                </ul>
+           </div>
+        </article>
+        <article class="blog_item">
+        <div class="blog_item_img">
+        <img class="card-img rounded-0" src="../main/IMAGES/image-2.webp" alt="">
+        <div class="container-2">
+            <a href="#" class="blog_item_date">
+                <h3>15</h3>
+                <p>Jan</p>
+                </a>
+        </div>
+        </div>
+        <div class="blog_details">
+            <div class="google">
+                <a class="d-inline-block" href="blog_details.html">
+                    <h2 class="blog-head fs-4" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                    </a>
+               </div>
+        <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+        he earth it first without heaven in place seed it second morning saying.</p>
+        <div class="svg">
+            <ul class="blog-info-link">
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                 </svg> Travel, Lifestyle</a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-circle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1"></path>
+                 </svg> 03 Comments</a></li>
+                </ul>
+           </div>
+        </div>
+        </article>
+        <article class="blog_item">
+        <div class="blog_item_img">
+        <img class="card-img rounded-0" src="../main/IMAGES/image-3.webp" alt="">
+        <div class="container-2">
+            <a href="#" class="blog_item_date">
+                <h3>15</h3>
+                <p>Jan</p>
+                </a>
+        </div>
+        </div>
+        <div class="blog_details">
+       <div class="google">
+        <a class="d-inline-block" href="blog_details.html">
+            <h2 class="blog-head fs-4" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+            </a>
+       </div>
+        <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+        he earth it first without heaven in place seed it second morning saying.</p>
+        <div class="svg">
+            <ul class="blog-info-link">
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                 </svg> Travel, Lifestyle</a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-circle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1"></path>
+                 </svg> 03 Comments</a></li>
+                </ul>
+           </div>
+        </div>
+        </article>
+        <article class="blog_item">
+        <div class="blog_item_img">
+        <img class="card-img rounded-0" src="../main/IMAGES/image-4.webp" alt="">
+        <div class="container">
+            <div class="container-2">
+                <a href="#" class="blog_item_date">
+                    <h3>15</h3>
+                    <p>Jan</p>
+                    </a>
+            </div>
+        </div>
+        </div>
+        <div class="blog_details">
+            <div class="google">
+                <a class="d-inline-block" href="blog_details.html">
+                    <h2 class="blog-head fs-4" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                    </a>
+               </div>
+        <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+        he earth it first without heaven in place seed it second morning saying.</p>
+       <div class="svg">
+        <ul class="blog-info-link">
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+                <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+             </svg> Travel, Lifestyle</a></li>
+            <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-circle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1"></path>
+             </svg> 03 Comments</a></li>
+            </ul>
+       </div>
+        </div>
+        </article>
+        <article class="blog_item">
+        <div class="blog_item_img">
+        <img class="card-img rounded-0" src="../main/IMAGES/image-5.webp" alt="">
+        <div class="container-2">
+            <a href="#" class="blog_item_date ">
+                <h3>15</h3>
+                <p>Jan</p>
+                </a>
+        </div>
+        </div>
+        <div class="blog_details">
+            <div class="google">
+                <a class="d-inline-block" href="blog_details.html">
+                    <h2 class="blog-head fs-4" style="color: #2d2d2d;">Google inks pact for new 35-storey office</h2>
+                    </a>
+               </div>
+        <p>That dominion stars lights dominion divide years for fourth have don't stars is that
+        he earth it first without heaven in place seed it second morning saying.</p>
+        <div class="svg">
+            <ul class="blog-info-link">
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0"></path>
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2"></path>
+                 </svg> Travel, Lifestyle</a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-message-circle" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 20l1.3 -3.9c-2.324 -3.437 -1.426 -7.872 2.1 -10.374c3.526 -2.501 8.59 -2.296 11.845 .48c3.255 2.777 3.695 7.266 1.029 10.501c-2.666 3.235 -7.615 4.215 -11.574 2.293l-4.7 1"></path>
+                 </svg> 03 Comments</a></li>
+                </ul>
+           </div>
+        </div>
+        </article>
+        <nav class="blog-pagination justify-content-center d-flex">
+        <ul class="pagination">
+        <li class="page-item">
+        <a href="#" class="page-link" aria-label="Previous">
+        <i class="ti-angle-left"></i>
+        </a>
+        </li>
+        <li class="page-item">
+        <a href="#" class="page-link">1</a>
+        </li>
+        <li class="page-item active">
+        <a href="#" class="page-link">2</a>
+        </li>
+        <li class="page-item">
+        <a href="#" class="page-link" aria-label="Next">
+        <i class="ti-angle-right"></i>
+        </a>
+        </li>
+        </ul>
+        </nav>
+        </div>
+        </div>
+        <div class="col-lg-4">
+        <div class="blog_right_sidebar">
+        <aside class="single_sidebar_widget search_widget">
+        <form action="#">
+        <div class="form-group m-0">
+        <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Keyword">
+        <div class="input-group-append d-flex">
+        <button class="boxed-btn2 text-bg-danger" type="button">Search</button>
+        </div>
+        </div>
+        </div>
+        </form>
+        </aside>
+        <aside class="single_sidebar_widget post_category_widget">
+        <h4 class="widget_title" style="color: #2d2d2d;">Category</h4>
+       <div class="rightside">
+        <div class="nav-work">
+            <ul class="list cat-list">
+                <li>
+                <a href="#" class="d-flex">
+                <p>Resaurant food</p>
+                <p>(37)</p>
+                </a>
+                </li>
+                <li>
+                <a href="#" class="d-flex">
+                <p>Travel news</p>
+                <p>(10)</p>
+                </a>
+                </li>
+                <li>
+                <a href="#" class="d-flex">
+                <p>Modern technology</p>
+     
+                <p>(03)</p>
+                </a>
+                </li>
+                <li>
+                <a href="#" class="d-flex">
+                <p>Product</p>
+                <p>(11)</p>
+                </a>
+                </li>
+                <li>
+                <a href="#" class="d-flex">
+                <p>Inspiration</p>
+                <p>21</p>
+                </a>
+                </li>
+                <li>
+                <a href="#" class="d-flex">
+                <p>Health Care (21)</p>
+                <p>09</p>
+                </a>
+                </li>
+                </ul>
+           </div>
+       </div>
+        </aside>
+        <aside class="single_sidebar_widget popular_post_widget">
+        <h3 class="widget_title" style="color: #2d2d2d;">Recent Post</h3>
+        <div class="media post_item">
+        <img src="../main/IMAGES/post_1.jpg.webp" alt="post">
+        <div class="media-body">
+        <div class="edit-text">
+            <a href="blog_details.html">
+                <h3 class="fs-6" style="color: #2d2d2d;">From life was you fish...</h3>
+                </a>
+        </div>
+        <p>January 12, 2019</p>
+        </div>
+        </div>
+        <div class="media post_item">
+        <img src="../main/IMAGES/post_2.jpg.webp" alt="post">
+        <div class="media-body">
+        <div class="edit-text">
+            <a href="blog_details.html">
+                <h3  class="fs-6" style="color: #2d2d2d;">The Amazing Hubble</h3>
+                </a>
+        </div>
+        <p>02 Hours ago</p>
+        </div>
+        </div>
+        <div class="media post_item">
+        <img src="../main/IMAGES/post_3.jpg.webp" alt="post">
+        <div class="media-body">
+        <div class="edit-text">
+            <a href="blog_details.html">
+                <h3  class="fs-6" style="color: #2d2d2d;">Astronomy Or Astrology</h3>
+                </a>
+        </div>
+        <p>03 Hours ago</p>
+        </div>
+        </div>
+        <div class="media post_item">
+        <img src="../main/IMAGES/post_4.jpg.webp" alt="post">
+        <div class="media-body">
+        <div class="edit-text">
+            <a href="blog_details.html">
+                <h3  class="fs-6" style="color: #2d2d2d;">Asteroids telescope</h3>
+                </a>
+        </div>
+        <p>01 Hours ago</p>
+        </div>
+        </div>
+        </aside>
+        <aside class="single_sidebar_widget tag_cloud_widget">
+        <h4 class="widget_title" style="color: #2d2d2d;">Tag Clouds</h4>
+    <div class="nav-scan">
+        <ul class="row ">
+            <div class="col">
+                <button>
+                    <li>
+                        <a href="#">project</a>
+                        </li>
+                </button>
+                <button>
+                    <li>
+                        <a href="#">love</a>
+                        </li>
+                </button>
+                <button>
+                    <li>
+                        <a href="#">technology</a>
+                        </li>
+                </button>
+               <button>
+                <li>
+                    <a href="#">travel</a>
+                    </li>
+               </button>
+    
+            </div>
+
+            <div class="col">
+                <button>
+                    <li>
+                        <a href="#">restaurant</a>
+                        </li>
+                </button>
+               <button>
+                <li>
+                    <a href="#">life style</a>
+                    </li>
+               </button>
+               <button>
+                <li>
+                    <a href="#">design</a>
+                    </li>
+               </button>
+               <button>
+                <li>
+                    <a href="#">illustration</a>
+                    </li>
+               </button>
+            </div>
+            
+  
+            </ul>
+    
+    </div>   
+    </aside>
+        <aside class="single_sidebar_widget instagram_feeds">
+        <h4 class="widget_title" style="color: #2d2d2d;">Instagram Feeds</h4>
+
+        <div class="images-edite">
+            <div class="row">
+                <ul class="instagram_row flex-wrap">
+                    <div class="col">
+                        <li>
+                            <a href="#">
+                            <img class="img-fluid" src="../main/IMAGES/post_5.jpg.webp" alt="">
+                            </a>
+                            </li>
+                            <br>
+                            
+                            <br>
+                            <li>
+                            <a href="#">
+                            <img class="img-fluid" src="../main/IMAGES/post_7.jpg.webp" alt="">
+                            </a>
+                            </li>
+                            <br>
+                    </div>
+                    <div class="">
+                        <li>
+                            <a href="#">
+                            <img class="img-fluid" src="asset/post_6.jpg.webp" alt="">
+                            </a>
+                            </li>
+                    </div>
+                    <div class="">
+                        <li>
+                            <a href="#">
+                            <img class="img-fluid" src="../main/IMAGES/post_8.jpg.webp" alt="">
+                            </a>
+                            </li>
+                            <br>
+                            <li>
+                            <a href="#">
+                            <img class="img-fluid" src="../main/IMAGES/post_9.jpg.webp" alt="">
+                            </a>
+                            </li>
+                            <br>
+                            <li>
+                            <a href="#">
+                            <img class="img-fluid" src="../main/IMAGES/post_10.jpg.webp" alt="">
+                            </a>
+                            </li>
+                    </div>
+                   
+                    </ul>
+               </div>
+        </div>
+
+
+        </aside>
+        <aside class="single_sidebar_widget newsletter_widget">
+        <h4 class="widget_title" style="color: #2d2d2d;">Newsletter</h4>
+        <form action="#">
+        <div class="form-group">
+        <input type="email" class="form-control" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email'" placeholder="Enter email" required="">
+        </div>
+        <div class="bttn">
+            <button class="button rounded-0 primary-bg text-white w-100 btn_1 boxed-btn border-danger" type="submit">Subscribe</button>
+
+        </div>
+       
+        </form>
+        </aside>
+        </div>
+        </div>
+        </div>
+        </div>
+        </section>
+
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+        
+            gtag('config', 'UA-23581568-13');
+        </script>
+        <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/v8b253dfea2ab4077af8c6f58422dfbfd1689876627854" integrity="sha512-bjgnUKX4azu3dLTVtie9u6TKqgx29RBwfj3QXYt5EKfWM/9hPSAI/4qcV5NACjwAo8UtTeWefx6Zq5PHcMm7Tg==" data-cf-beacon="{&quot;rayId&quot;:&quot;7f620d847e8a00a4&quot;,&quot;token&quot;:&quot;cd0b4b3a733644fc843ef0b185f98241&quot;,&quot;version&quot;:&quot;2023.7.0&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="assets/js/application.min.js"></script>
+
+
+    
+
+    <!-- footer  -->
+    <footer>
+        <div class="footer-bottom">
+            <div class="footer-bottom-1  d-flex flex-column justify-content-center align-items-center p-3">
+                <img src="./IMAGES/logo.png.webp" alt="footer logo">
+                <p class="text-white text-center my-4 fs-6">
+                    Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation.
+                </p>
+                <nav>
+                    <ul class="d-flex flex-wrap justify-content-center align-items-center">
+                        <li class="m-3"><a href="./index.html">Home</a></li>
+                        <li class="m-3"><a href="./Practice Area.html">Practice Area</a></li>
+                        <li class="m-3"><a href="./About.html">About</a></li>
+                        <li class="m-3"><a href="../main/index.html">Blog</a></li>
+                        <li class="m-3"><a href="./Contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-bottom-2">
+                <div class="line m-3">
+                     <div class="content">
+                        <div class="call text-white d-none">Call Us: +1 (78)673 3567<span class="text-secondary mx-2"> | </span> layer76@gmail.com</div>
+                        <div class="svg d-flex text-white">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook m-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3"></path>
+                             </svg>
+                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter-filled m-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M14.058 3.41c-1.807 .767 -2.995 2.453 -3.056 4.38l-.002 .182l-.243 -.023c-2.392 -.269 -4.498 -1.512 -5.944 -3.531a1 1 0 0 0 -1.685 .092l-.097 .186l-.049 .099c-.719 1.485 -1.19 3.29 -1.017 5.203l.03 .273c.283 2.263 1.5 4.215 3.779 5.679l.173 .107l-.081 .043c-1.315 .663 -2.518 .952 -3.827 .9c-1.056 -.04 -1.446 1.372 -.518 1.878c3.598 1.961 7.461 2.566 10.792 1.6c4.06 -1.18 7.152 -4.223 8.335 -8.433l.127 -.495c.238 -.993 .372 -2.006 .401 -3.024l.003 -.332l.393 -.779l.44 -.862l.214 -.434l.118 -.247c.265 -.565 .456 -1.033 .574 -1.43l.014 -.056l.008 -.018c.22 -.593 -.166 -1.358 -.941 -1.358l-.122 .007a.997 .997 0 0 0 -.231 .057l-.086 .038a7.46 7.46 0 0 1 -.88 .36l-.356 .115l-.271 .08l-.772 .214c-1.336 -1.118 -3.144 -1.254 -5.012 -.554l-.211 .084z" stroke-width="0" fill="currentColor"></path>
+                             </svg>
+                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin m-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+                                <path d="M8 11l0 5"></path>
+                                <path d="M8 8l0 .01"></path>
+                                <path d="M12 16l0 -5"></path>
+                                <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+                             </svg>
+                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube-filled m-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M18 3a5 5 0 0 1 5 5v8a5 5 0 0 1 -5 5h-12a5 5 0 0 1 -5 -5v-8a5 5 0 0 1 5 -5zm-9 6v6a1 1 0 0 0 1.514 .857l5 -3a1 1 0 0 0 0 -1.714l-5 -3a1 1 0 0 0 -1.514 .857z" stroke-width="0" fill="currentColor"></path>
+                             </svg>
+                        </div>
+                        <div class="btn bg-white text-danger rounded-0 p-2">Make An Appointment</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-3 m-2 text-center p-3 fs-6">
+                Copyright &copy;2023 All rights reserved | This template is made with <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart-filled" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-.18 .185l-.048 .041l-7.45 7.379a1 1 0 0 1 -1.313 .082l-.094 -.082l-7.493 -7.422a6 6 0 0 1 3.176 -10.215z" stroke-width="0" fill="currentColor"></path>
+                 </svg>  by <a href="#">Colorlib</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
