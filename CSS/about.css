@@ -68,12 +68,12 @@ header .header-top{
 /* <!-- HEADER CONTAINER --> */
 
 .main-bg-1{
-    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../IMAGES/header-bg.webp);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/header-bg.webp);
 
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    height: 500px;
+    height: 400px;
 
 }
 
