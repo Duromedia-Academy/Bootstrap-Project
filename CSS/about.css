@@ -27,7 +27,7 @@ header .header-top{
 
 /* homepage */
 .home{
-    background-image: url(../images/header-bg.webp);
+    background-image: url(../IMAGES/header-bg.webp);
     max-height: 100vh;
     background-size: auto;
     background-repeat: no-repeat;
@@ -68,7 +68,7 @@ header .header-top{
 /* <!-- HEADER CONTAINER --> */
 
 .main-bg-1{
-    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../images/header-bg.webp);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../IMAGES/header-bg.webp);
 
     background-repeat: no-repeat;
     background-position: center center;
@@ -240,7 +240,7 @@ header .header-top{
 /* <!-- CLIENT TESTIMONIAL --> */
 
 .clients{
-    background-image: url(../images/bg2.webp);
+    background-image: url(../IMAGES/bg2.webp);
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 96px;
