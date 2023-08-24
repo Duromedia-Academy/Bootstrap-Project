@@ -16,8 +16,199 @@ header .header-top{
     width: 120px;
 }
 
+#header{
+    background-image: url(../IMAGES/finder.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    opacity: 1;
+    background-blend-mode:lighten;
+    height: 400px;
+}
+.text-light{
+    color: #fff;
 
-/* homepage */
+    font-size: 30px;
+
+}
+#header{
+    margin-bottom: 100px;
+}
+#section-2 img{
+    margin-left: -40px;
+    margin-right: 40px;
+}
+#section-2  .container-2 a{
+    border-radius: 05px;
+    background-color: rgb(214, 51, 51);
+    margin: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+   
+
+}
+#section-2 .container-2 a:hover{
+    /* background-color: rgb(132, 135, 138); */
+    color: rgb(214, 51, 5);
+}
+#section-2 .aside{
+    margin-bottom: 90px;
+}
+#section-2 .p p{
+    text-decoration: none;
+   
+    background-color: rgb(240, 248, 255);
+}
+#section-2 .container-2{
+    text-decoration: none;
+    
+}
+#section-2 .container-2:hover{
+    color: rgb(173, 33, 33);
+}
+#section-2 .o{
+    color: #000;
+}
+#section-2 .o h2:hover{
+    color: rgb(173, 33, 33);
+}
+/* #section-2 .o{
+    margin-bottom: 150px;
+} */
+.m{
+    text-decoration: none;
+    color: #000;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.container-2 a{
+    background-color: rgb(214, 51, 51);
+    margin-right: 10px;
+    margin-left: 10px;
+    text-decoration: none;
+   
+    position: sticky;
+}
+
+.container-2 a:hover{
+    /* background-color: rgb(132, 135, 138); */
+    color: rgb(214, 51, 5);
+    
+}
+.nav-work a{
+    color: #000;
+    text-decoration: none;
+   
+    list-style: none;
+
+}
+.nav-work a:hover{
+    /* background-color: rgb(132, 135, 138); */
+    color: rgba(196, 60, 60, 0.985);
+}
+.google a{
+    color: #000;
+    text-decoration: none;
+   
+    font-family: Baskerville, serif;
+
+}
+.google a h2:hover{
+    /* background-color: rgb(132, 135, 138); */
+    color: rgb(214, 51, 5);
+}
+.edit-text{
+    text-decoration: none;
+   
+
+
+
+}
+.edit-text:hover{
+    color: rgb(173, 33, 33);
+}
+.images-edite{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    list-style: none;
+    text-decoration: none;
+   
+
+}
+.svg a{
+    color: #000;
+    text-decoration: none;
+   
+    list-style: none;
+
+}
+.bttn :hover{
+    background-color: rgb(173, 33, 33);
+}
+
+.nav-work button{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    border: white;
+    list-style: none;
+}
+.nav-work button:hover{
+    background-color: rgb(173, 33, 33);
+    color: white;
+
+}
+
+.images-edite a img{
+    list-style: none;
+
+}
+.nav-scan button{
+    border: white;
+    text-decoration: none;
+    list-style: none;
+    text-decoration: none;
+    
+
+
+}
+.nav-scan button :hover{
+     background-color: rgb(173, 33, 33);
+     color: #fff;
+     text-decoration: none;
+     list-style: none;
+     text-decoration: none;
+     
+     
+}
+.svg li{
+    float: left;
+    font-size: 14px;
+    list-style: none;
+    display: list-item;
+    text-align: webkit-match-parent;
+    font-family: Roboto, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    margin-bottom: 40px;
+    /* margin-left: 30px; */
+}
+.edit-text{
+    text-decoration: none;
+    text-decoration: none;
+    list-style: none;
+    text-decoration: none;
+    
+
+    
+}
+
+
+
+/* homepage
 .home{
     background-image: url(../IMAGES/homebackground.jpg.webp);
     max-height: 100vh;
@@ -53,7 +244,7 @@ header .header-top{
     font-size: 40px;
     font-family: "Baskervville",serif;
 }
-
+ */
 
 
 
