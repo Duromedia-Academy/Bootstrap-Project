@@ -56,6 +56,352 @@ header .header-top{
 
 
 
+/* home page 2 */
+.about-low-area{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+
+
+.about-right-cap .about-right-img img{
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 140px 0 0 0;
+}
+
+.about-right-cap .img-cap{
+
+    bottom: -18px;
+    right: -35px;
+    width: 194px;
+    height: 171px;
+    padding: 18px 10px;
+   
+}
+
+.about-low-area .about-right-cap .img-cap span {
+   
+    font-size: 76px;
+    font-weight: 900;
+  
+    margin-bottom: 5px;
+  
+
+}
+
+.about-low-area .about-right-cap .img-cap p {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 19px;
+    margin-bottom: 15px;
+    margin-top: 0;
+
+}
+
+.mb-40{
+    margin-bottom: 40px;
+}
+
+.mb-35{
+    margin-bottom: 35px;
+}
+
+.section-tittle h2{
+   
+    font-size: 40px;
+    font-weight: 400;
+  
+    margin-bottom: 30px;
+    margin-top: 0px;
+  
+}
+
+.section-tittle h3{
+   
+    font-size: 24px;
+    font-weight: 400;
+   
+    margin-top: 0px;
+   
+}
+
+.section-tittle p{
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.about-low-area .about-caption p {
+    font-size: 18px;
+    font-weight: 300;
+   
+    margin-bottom: 40px;
+}
+
+.about-low-area .about-bottom span {
+    font-size: 20px;
+    margin-bottom: 2px;
+   
+}
+
+.about-low-area .about-bottom span p {
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 15px;
+
+}
+
+
+
+
+/* practice area  */
+
+
+
+/* <!-- MOTIVES AND GOALS --> */
+
+.contact-wrappers{
+    padding: 91px 0;
+}
+
+.contact-wrappers .wantToWork-caption h2 {
+
+    font-size: 24px;
+    margin-bottom: 27px;
+    font-weight: 400;
+    margin-top: 0px;
+}
+
+.contact-wrappers .wantToWork-caption p {
+    font-weight: 400;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.contact-wrappers .wantToWork-caption .pera-bottom {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 38px;
+   
+}
+
+
+/* <!-- BRAND AREA --> */
+
+
+.brand-active{
+    padding-top: 50px;
+    padding-bottom: 40px;
+   
+    box-sizing: border-box;
+}
+
+.brand-list{
+    margin: 0;
+    padding: 0;
+}
+
+.single-brand{
+
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    width: 184px;
+}
+
+
+/* <!-- CLIENT TESTIMONIAL --> */
+
+.clients{
+    background-image: url(../IMAGES/bg2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 96px;
+    padding-bottom: 81px;
+}
+
+.clients-quote{
+    margin: 0;
+    padding: 0;
+}
+
+.clients-quote2{
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    width: 546px;
+}
+
+.clients-caption{
+    padding-left: 80px;
+}
+
+.clients-caption .clients-top-caption h2{
+    font-size: 46px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    margin-top: 0px;
+}
+
+.clients-caption .clients-top-caption h2::before{
+    position: absolute;
+    content: "";
+    width: 60px;
+    height: 2px;
+    left: -80px;
+    top: 50%;
+    background: #ff6f00;
+}
+
+.clients-caption .clients-top-caption p{
+    margin-bottom: 32px;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.founder-caption .founder-text{
+    margin-left: 20px;
+}
+
+.founder-caption .founder-text span{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.founder-caption .founder-text p{
+    font-weight: 300;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+
+
+/* <!-- RECENT NEWS AND HEADLINES --> */
+
+
+.services-area{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+
+.single-services .services-img img {
+    border-radius: 80px 0 0 0;
+    width: 100%;
+}
+
+
+.single-services .services-caption {
+    width: 80%;
+    padding: 33px 30px 16px 32px;
+    margin-top: -100px;
+    float: right;
+}
+
+.single-services .services-caption span {
+    margin-bottom: 15px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.single-services .services-caption h3{
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.single-services .services-caption h3 a {
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.single-services .services-caption p {
+    margin-bottom: 15px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.btn3{
+    color: #2D0000;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.btn3::before{
+    position: absolute;
+    content: "";
+    background: #B40000;
+    width: 100%;
+    height: 2px;
+    bottom: -11px;
+}
+
+
+/* <!-- CONSULTATIONS --> */
+
+.consultant::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #2D0000;
+    z-index: -1;
+}
+
+.consultant .consultant-container{
+  
+        box-shadow: 0px 20px 30px rgba(0,0,0,0.06);
+        padding: 20px 36px 10px 50px;
+}
+
+
+.consultant .consultant-wrapper blockquote{
+    margin-right: 30px;
+}
+
+.consultant .consultant-container .consultant-caption h2{
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
+    margin-top: 0px;
+}
+
+.consultant .consultant-container .consultant-caption p{
+    font-size: 16px;
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+
+.contact{
+    float: right;
+}
+
+.consultant .consultant-container .contact span{
+    font-size: 24px;
+    font-weight: 400;
+    margin-right: 31px;
+}
+
+.consultant .btn2{
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 31px 12px 30px;
+   
+}
+
+.consultant .btn2 i{
+    padding-right: 12px;
+}
+
 
 /* footer  */
 footer{
@@ -105,6 +451,37 @@ footer .footer-bottom-2 .line{
     color: tomato;
     text-decoration: none;
 }
+
+
+
+/* GO TO TOP */
+
+
+
+.to-top {
+   
+    height: 50px;
+    width: 50px;
+    right: 31px;
+    bottom: 18px;
+    pointer-events: none;
+    transition: all .4s;
+    font-size: 20px;
+    border-radius: 50%;
+    line-height: 48px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px 3px rgba(108,98,98,0.2);
+    line-height: 50px;
+    opacity: 0;
+}
+
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
 
 @media only screen and (min-width : 320px) {
     .home-text h1{

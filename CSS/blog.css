@@ -297,6 +297,37 @@ footer .footer-bottom-2 .line{
     text-decoration: none;
 }
 
+
+
+/* GO TO TOP */
+
+
+
+.to-top {
+   
+    height: 50px;
+    width: 50px;
+    right: 31px;
+    bottom: 18px;
+    pointer-events: none;
+    transition: all .4s;
+    font-size: 20px;
+    border-radius: 50%;
+    line-height: 48px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 10px 3px rgba(108,98,98,0.2);
+    line-height: 50px;
+    opacity: 0;
+}
+
+.to-top.active{
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+}
+
+
+
 @media only screen and (min-width : 320px) {
     .home-text h1{
         font-size: 28px;
